@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1f1f1f;
+  color: #eaeaea;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #141414;
+  border-bottom: 1px solid #2b2b2b;
+  padding: 18px 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brand-name {
+  color: #6aa8ff;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.brand-subtitle {
+  color: #bdbdbd;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #ffae42;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #3b3b3b;
+}
+
+/* Task 2: hover changes + underline */
+.nav-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  background: #2a2a2a;
+}
+
+.container {
+  width: min(1050px, 92%);
+  margin: 0 auto;
+  padding: 26px 0 80px;
+}
+
+.section {
+  padding: 28px 0;
+  border-bottom: 1px solid #2b2b2b;
+}
+
+.section-title {
+  color: #6aa8ff;
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+.about-card {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  background: #242424;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid #3c3c3c;
+}
+
+.profile-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.profile-summary {
+  color: #d7d7d7;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.skill-item {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: #242424;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.skill-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.skill-desc {
+  font-size: 13px;
+  color: #bdbdbd;
+  margin-top: 4px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.project-card {
+  background: #242424;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.project-title {
+  color: #ffae42;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.project-desc {
+  color: #d7d7d7;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.recommendations-list {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.recommendation-card {
+  background: #242424;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.recommendation-text {
+  color: #eaeaea;
+  line-height: 1.5;
+}
+
+.recommendation-author {
+  margin-top: 10px;
+  color: #bdbdbd;
+  font-size: 13px;
+}
+
+.recommendation-form-wrapper {
+  background: #242424;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.form-title {
+  color: #ffae42;
+  margin-bottom: 12px;
+}
+
+.recommendation-form {
+  display: grid;
+  gap: 10px;
+}
+
+.form-label {
+  font-size: 13px;
+  color: #d7d7d7;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #3a3a3a;
+  background: #1b1b1b;
+  color: #ffffff;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #6aa8ff;
+}
+
+.form-btn {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #3a3a3a;
+  background: #ffae42;
+  color: #1a1a1a;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: #ffd08a;
+}
+
+.home-btn {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  text-decoration: none;
+  background: #242424;
+  color: #ffae42;
+  border: 2px solid #3a3a3a;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+}
+
+.home-btn:hover {
+  background: #2d2d2d;
+  text-decoration: underline;
+}
+
+.author-line {
+  color: #d7d7d7;
+  font-size: 16px;
+}
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edison Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+
+  <!-- HEADER -->
+  <header class="header">
+    <!-- Task 1: Styled name top-left -->
+    <div class="brand">
+      <h1 class="brand-name">Edison Darío Guarín</h1>
+      <p class="brand-subtitle">Finance & International Business • Future Software Engineer</p>
+    </div>
+
+    <!-- Task 2: Navigation with 4 options -->
+    <nav class="nav">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#recommendations">Recommendations</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <!-- ABOUT ME (Task 3) -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-card">
+        <!-- Cambia esta imagen por una tuya -->
+        <img class="profile-img" src="Foto visa.jpg" alt="Profile picture" />
+
+        <div class="about-text">
+          <h3 class="profile-name">Edison Darío Guarín Albarracín</h3>
+          <p class="profile-summary">
+            I am from Colombia and I study Finance and International Business. I also learn programming
+            because I want to move to a tech career in the future. I like personal finance, investing,
+            and building simple web apps with HTML, CSS and JavaScript. My goal is create projects that
+            help people to manage money and make better decisions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS (Task 4) -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img class="skill-logo" src="images/html.png" alt="HTML logo" />
+          <div>
+            <p class="skill-name">HTML</p>
+            <p class="skill-desc">Structure for webpages</p>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <img class="skill-logo" src="images/css.png" alt="CSS logo" />
+          <div>
+            <p class="skill-name">CSS</p>
+            <p class="skill-desc">Layout, style and responsive design</p>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <img class="skill-logo" src="images/js.png" alt="JavaScript logo" />
+          <div>
+            <p class="skill-name">JavaScript</p>
+            <p class="skill-desc">DOM, events and basic interactivity</p>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <img class="skill-logo" src="images/excel.png" alt="Excel logo" />
+          <div>
+            <p class="skill-name">Excel / Budgeting</p>
+            <p class="skill-desc">Personal finance tracking and planning</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (Task 5) -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3 class="project-title">Project 1 - Budget Tracker (Web)</h3>
+          <p class="project-desc">
+            A simple page to register expenses and show totals. Focus on clean UI and easy inputs.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title">Project 2 - Savings Goal Planner</h3>
+          <p class="project-desc">
+            A mini tool where user set a savings goal and see progress. Uses JavaScript for calculations.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3 class="project-title">Project 3 - Travel Cost Estimator</h3>
+          <p class="project-desc">
+            A small project to estimate travel costs (food, transport, rent) and keep a summary table.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS (Task 6 + 7 + 9 with JS) -->
+    <section id="recommendations" class="section">
+      <h2 class="section-title">Recommendations</h2>
+
+      <!-- Existing recommendations list (Task 6) -->
+      <div id="recommendations-list" class="recommendations-list">
+        <div class="recommendation-card">
+          <p class="recommendation-text">
+            "Edison is very disciplined and always try to improve. He learns fast and ask good questions."
+          </p>
+          <p class="recommendation-author">— Study Partner</p>
+        </div>
+
+        <div class="recommendation-card">
+          <p class="recommendation-text">
+            "Great attitude and strong responsibility. He is consistent with his goals and work."
+          </p>
+          <p class="recommendation-author">— Friend</p>
+        </div>
+
+        <div class="recommendation-card">
+          <p class="recommendation-text">
+            "Good communication and positive energy. He is focused on building a better future."
+          </p>
+          <p class="recommendation-author">— Mentor</p>
+        </div>
+      </div>
+
+      <!-- Form to add a new recommendation (Task 7) -->
+      <div class="recommendation-form-wrapper">
+        <h3 class="form-title">Add a Recommendation</h3>
+
+        <form id="recommendation-form" class="recommendation-form">
+          <label class="form-label" for="rec-name">Name (optional)</label>
+          <input id="rec-name" class="form-input" type="text" placeholder="Your name" />
+
+          <label class="form-label" for="rec-message">Message</label>
+          <textarea
+            id="rec-message"
+            class="form-textarea"
+            rows="4"
+            placeholder="Write your recommendation..."
+            required
+          ></textarea>
+
+          <button class="form-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- AUTHOR(S) section (sale en tu captura) -->
+    <section id="authors" class="section">
+      <h2 class="section-title">Author(s)</h2>
+      <p class="author-line">Edison Darío Guarín Albarracín</p>
+    </section>
+
+  </main>
+
+  <!-- Task 8: Home button -->
+  <a class="home-btn" href="#top" aria-label="Go to top">Home</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
